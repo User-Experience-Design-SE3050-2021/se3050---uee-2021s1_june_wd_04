@@ -3,8 +3,8 @@ se3050---uee-2021s1_june_wd_04 created by GitHub Classroom
 
 Member Details
 
-IT19382036 - Gamage L.S
-IT19176116 - Bambarandage T.M.L
+IT19382036 - Gamage L.S    
+IT19176116 - Bambarandage T.M.L    
 IT19989242 - Anjali W.M.S
 
 App Details
