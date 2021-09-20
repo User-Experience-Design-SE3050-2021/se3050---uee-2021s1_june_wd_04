@@ -3,4 +3,10 @@
     <string name="u_text1"><![CDATA[Work & Hire]]></string>
     <string name="U_text2"><![CDATA[Find job opportunities & hire people easier than ever]]></string>
     <string name="u_button2">GET STARTED</string>
+    <string name="u_text2">Opportunities near you</string>
+    <string name="u_text3">Search jobs and talent available in your area</string>
+    <string name="u_button3">GET STARTED</string>
+    <string name="u_text4">Post Job</string>
+    <string name="u_text5">With topjobs you can post jobs faster than ever before</string>
+    <string name="u_button3">GET STARTED</string>
 </resources>
