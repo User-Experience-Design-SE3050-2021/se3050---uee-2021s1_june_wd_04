@@ -9,4 +9,12 @@
     <string name="u_text4">Post Job</string>
     <string name="u_text5">With topjobs you can post jobs faster than ever before</string>
     <string name="u_button3">GET STARTED</string>
+    <string name="u_text7">I am a</string>
+    <string name="u_button5">JOB SEEKER</string>
+    <string name="u_button6">JOB PROVIDER</string>
+    <string name="u_button7">Sign In</string>
+    <string name="u_button8">Sign up</string>
+    <string name="u_text8">Job Seeker</string>
+    <string name="u_text9">Sign In as a Job seeker</string>
+    <string name="U_t">Sign In</string>
 </resources>
