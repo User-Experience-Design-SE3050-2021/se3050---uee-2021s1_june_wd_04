@@ -15,7 +15,8 @@
     <string name="u_button7">Sign In</string>
     <string name="u_button8">Sign up</string>
     <string name="u_text8">Job Seeker</string>
-    <string name="u_text9">Sign In as a Job seeker</string>
+    <string name="u_text9">Sign In As a Job seeker</string>
     <string name="U_t">Sign In</string>
-    <string name="u_text10">Sign In as a Job Provider</string>
+    <string name="u_text10">Sign In As a Job Provider</string>
+    <string name="u_text11">Job Provider</string>
 </resources>

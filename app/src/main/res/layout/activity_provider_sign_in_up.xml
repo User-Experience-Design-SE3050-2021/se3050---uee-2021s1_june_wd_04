@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".SeekerSign_in_up">
+    tools:context=".provider_sign_in_up">
 
     <TextView
         android:id="@+id/u_text11"
@@ -13,7 +13,7 @@
         android:layout_height="45dp"
         android:layout_marginTop="68dp"
         android:fontFamily="@font/nunito_extrabold"
-        android:text="@string/u_text8"
+        android:text="@string/u_text11"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="28sp"
@@ -65,4 +65,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.424"
         app:srcCompat="@drawable/up" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
