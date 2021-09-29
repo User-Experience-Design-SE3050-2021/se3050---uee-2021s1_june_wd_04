@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Job_Seeker_Register">
+    tools:context=".Job_Provider_Register">
 
     <Button
         android:id="@+id/u_button"
@@ -12,15 +12,15 @@
         android:layout_height="51dp"
         android:backgroundTint="#C81616"
         android:fontFamily="@font/poppins_bold"
-        android:text="Register as Job Seeker"
+        android:text="Register as Job Provider"
         android:textColor="#FFFFFF"
         app:cornerRadius="12dip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintVertical_bias="0.927" />
 
     <TextView
         android:id="@+id/u_textView2"
@@ -44,6 +44,23 @@
         android:layout_width="363dp"
         android:layout_height="46dp"
         android:background="#4BED6A5E"
+        android:text="   Phone Number"
+        android:textAlignment="textStart"
+        android:textColor="#6E0909"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <TextView
+        android:id="@+id/u_textView8"
+        android:layout_width="363dp"
+        android:layout_height="46dp"
+        android:background="#4BED6A5E"
         android:text="   Password"
         android:textAlignment="textStart"
         android:textColor="#6E0909"
@@ -54,14 +71,14 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.689" />
+        app:layout_constraintVertical_bias="0.713" />
 
     <TextView
         android:id="@+id/u_textView4"
         android:layout_width="363dp"
         android:layout_height="46dp"
         android:background="#4BED6A5E"
-        android:text="   Date of birth"
+        android:text="   Company name"
         android:textAlignment="textStart"
         android:textColor="#6E0909"
         android:textSize="16sp"
@@ -71,24 +88,24 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.464" />
+        app:layout_constraintVertical_bias="0.432" />
 
     <TextView
         android:id="@+id/u_textView5"
         android:layout_width="363dp"
         android:layout_height="46dp"
         android:background="#4BED6A5E"
-        android:text="   Gender"
+        android:text="   Company address"
         android:textAlignment="textStart"
         android:textColor="#6E0909"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintVertical_bias="0.527" />
 
     <TextView
         android:id="@+id/u_textView7"
@@ -122,7 +139,7 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357" />
+        app:layout_constraintVertical_bias="0.334" />
 
     <TextView
         android:id="@+id/u_text12"
@@ -140,4 +157,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
