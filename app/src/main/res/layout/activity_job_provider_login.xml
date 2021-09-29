@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:textAlignment="inherit"
-    tools:context=".JobSeeker_login">
+    tools:context=".JobProvider_login">
 
     <Button
         android:id="@+id/u_button9"
@@ -53,17 +52,17 @@
 
     <TextView
         android:id="@+id/u_text10"
-        android:layout_width="261dp"
-        android:layout_height="42dp"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
         android:layout_marginTop="68dp"
         android:fontFamily="@font/nunito_extrabold"
-        android:text="@string/u_text9"
+        android:text="@string/u_text10"
         android:textAlignment="center"
         android:textColor="#6E0909"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.61" />
@@ -83,4 +82,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.837" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

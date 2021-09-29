@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TopJobApp">
-        <activity android:name=".JobSeeker_login"></activity>
+        <activity android:name=".JobProvider_login"></activity>
+        <activity android:name=".JobSeeker_login" />
         <activity android:name=".SeekerSign_in_up" />
         <activity android:name=".welcome_page" />
         <activity android:name=".on_board_page3" />
