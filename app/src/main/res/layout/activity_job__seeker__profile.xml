@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbarSize="2dp"
-    tools:context=".Job_Seeker_Profile">
+    tools:context=".UserManagement_Profile.Job_Seeker_Profile">
 
     <ImageView
         android:id="@+id/imageView7"

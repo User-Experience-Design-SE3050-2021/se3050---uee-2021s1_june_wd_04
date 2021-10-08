@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Job_Provider_Register">
+    tools:context=".UserManagement_Profile.Job_Provider_Register">
 
     <Button
         android:id="@+id/u_button"
