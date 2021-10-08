@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TopJobApp">
-        <activity android:name=".Edit_Job_Seeker"></activity>
+        <activity android:name=".Job_Provider_Profile"></activity>
+        <activity android:name=".Change_Password" />
+        <activity android:name=".Edit_Job_Seeker" />
         <activity android:name=".Job_Seeker_Profile" />
         <activity android:name=".Job_Provider_Register" />
         <activity android:name=".Job_Seeker_Register" />

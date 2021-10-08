@@ -2,20 +2,13 @@ package com.example.topjobapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
 
-public class welcome_page extends AppCompatActivity {
-
-
+public class Job_Seeker_Profile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome_page);
-
-
+        setContentView(R.layout.activity_job__seeker__profile);
     }
 }
