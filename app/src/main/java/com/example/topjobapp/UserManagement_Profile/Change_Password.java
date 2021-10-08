@@ -1,8 +1,10 @@
-package com.example.topjobapp;
+package com.example.topjobapp.UserManagement_Profile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.topjobapp.R;
 
 public class Change_Password extends AppCompatActivity {
 

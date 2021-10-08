@@ -1,14 +1,20 @@
-package com.example.topjobapp;
+package com.example.topjobapp.UserManagement_Profile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class JobSeeker_login extends AppCompatActivity {
+import com.example.topjobapp.R;
+
+public class welcome_page extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_job_seeker_login);
+        setContentView(R.layout.activity_welcome_page);
+
+
     }
 }
