@@ -5,23 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class on_board_page2 extends AppCompatActivity {
 
-    private ImageButton welcome;
+    private Button start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_on_board_page2);
 
-        welcome = findViewById(R.id.u_tapbtn1);
+        start = findViewById(R.id.u_button3);
 
-        welcome.setOnClickListener(new View.OnClickListener() {
+        start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, on_boarding_page1.class));
+                startActivity(new Intent(on_board_page2.this, on_board_page3.class));
             }
         });
     }

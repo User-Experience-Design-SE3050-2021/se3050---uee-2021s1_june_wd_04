@@ -5,66 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    android:clickable="true"
-    tools:context=".on_boarding_page1">
+    tools:context=".on_board_page3">
 
-    <ImageView
-        android:id="@+id/u_imageView"
-        android:layout_width="223dp"
-        android:layout_height="256dp"
+    <Button
+        android:id="@+id/u_button4"
+        android:layout_width="243dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/u_button3"
+        android:textColor="#C81616"
+        app:cornerRadius="12dip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.326"
-        app:srcCompat="@drawable/onboard1" />
+        app:layout_constraintVertical_bias="0.918" />
 
     <TextView
-        android:id="@+id/U_text2"
+        android:id="@+id/u_text5"
         android:layout_width="306dp"
         android:layout_height="71dp"
         android:fontFamily="@font/nunito_extrabold"
-        android:text="@string/U_text2"
+        android:text="@string/u_text5"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.775" />
 
     <TextView
-        android:id="@+id/u_text1"
+        android:id="@+id/u_text4"
         android:layout_width="223dp"
         android:layout_height="45dp"
         android:layout_marginTop="68dp"
         android:fontFamily="@font/nunito_extrabold"
-        android:text="@string/u_text1"
+        android:text="@string/u_text4"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.613" />
 
-    <Button
-        android:id="@+id/u_button2"
-        android:layout_width="243dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#FFFFFF"
-        android:fontFamily="@font/poppins_bold"
-        android:text="@string/u_button2"
-        android:textColor="#C81616"
-        app:cornerRadius="12dip"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/u_text4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/U_text2"
-        app:layout_constraintVertical_bias="0.479" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.748"
+        app:srcCompat="@drawable/onboard3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

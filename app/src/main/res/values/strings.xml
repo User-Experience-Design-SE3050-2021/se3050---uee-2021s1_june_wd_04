@@ -3,4 +3,21 @@
     <string name="u_text1"><![CDATA[Work & Hire]]></string>
     <string name="U_text2"><![CDATA[Find job opportunities & hire people easier than ever]]></string>
     <string name="u_button2">GET STARTED</string>
+    <string name="u_text2">Opportunities near you</string>
+    <string name="u_text3">Search jobs and talent available in your area</string>
+    <string name="u_button3">GET STARTED</string>
+    <string name="u_text4">Post Job</string>
+    <string name="u_text5">With topjobs you can post jobs faster than ever before</string>
+    <string name="u_button">GET STARTED</string>
+    <string name="u_text7">I am a</string>
+    <string name="u_button5">JOB SEEKER</string>
+    <string name="u_button6">JOB PROVIDER</string>
+    <string name="u_button7">Sign In</string>
+    <string name="u_button8">Sign up</string>
+    <string name="u_text8">Job Seeker</string>
+    <string name="u_text9">Sign In As a Job seeker</string>
+    <string name="U_t">Sign In</string>
+    <string name="u_text10">Sign In As a Job Provider</string>
+    <string name="u_text11">Job Provider</string>
+    <string name="u_text12">Create an Account</string>
 </resources>

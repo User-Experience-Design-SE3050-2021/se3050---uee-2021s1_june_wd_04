@@ -9,7 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TopJobApp">
-        <activity android:name=".on_boarding_page1"></activity>
+        <activity android:name=".Job_Provider_Profile"></activity>
+        <activity android:name=".Change_Password" />
+        <activity android:name=".Edit_Job_Seeker" />
+        <activity android:name=".Job_Seeker_Profile" />
+        <activity android:name=".Job_Provider_Register" />
+        <activity android:name=".Job_Seeker_Register" />
+        <activity android:name=".provider_sign_in_up" />
+        <activity android:name=".JobProvider_login" />
+        <activity android:name=".JobSeeker_login" />
+        <activity android:name=".SeekerSign_in_up" />
+        <activity android:name=".welcome_page" />
+        <activity android:name=".on_board_page3" />
+        <activity android:name=".on_board_page2" />
+        <activity android:name=".on_boarding_page1" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
