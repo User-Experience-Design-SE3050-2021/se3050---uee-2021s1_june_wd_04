@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TopJobApp">
-        <activity android:name=".UserManagement_Profile.Job_Provider_Profile"></activity>
+        <activity android:name=".Jobprovider_addJobVacancy"></activity>
+        <activity android:name=".JobProvider_home" />
+        <activity android:name=".UserManagement_Profile.Job_Provider_Profile" />
         <activity android:name=".UserManagement_Profile.Change_Password" />
         <activity android:name=".UserManagement_Profile.Edit_Job_Seeker" />
         <activity android:name=".UserManagement_Profile.Job_Seeker_Profile" />
