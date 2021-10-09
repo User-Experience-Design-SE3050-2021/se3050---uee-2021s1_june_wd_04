@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "361213833118",
+    "firebase_url": "https://topjob-c9cad-default-rtdb.firebaseio.com",
+    "project_id": "topjob-c9cad",
+    "storage_bucket": "topjob-c9cad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361213833118:android:5aea477f6327641c94f08f",
+        "android_client_info": {
+          "package_name": "com.example.topjobapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361213833118-cogtr3ekmj2803b4lfpaibiubrogcgnl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsAv4qlqmZ7-rBmpz6EL_xPvCp__hEk9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361213833118-cogtr3ekmj2803b4lfpaibiubrogcgnl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
