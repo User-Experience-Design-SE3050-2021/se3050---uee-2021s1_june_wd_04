@@ -7,7 +7,7 @@
     tools:context=".UserManagement_Profile.welcome_page">
 
     <Button
-        android:id="@+id/u_button5"
+        android:id="@+id/u_btn5"
         android:layout_width="309dp"
         android:layout_height="52dp"
         android:backgroundTint="#C81616"
