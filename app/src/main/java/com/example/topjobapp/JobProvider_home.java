@@ -12,6 +12,7 @@ import com.example.topjobapp.UserManagement_Profile.JobProvider_login;
 public class JobProvider_home extends AppCompatActivity {
 
     private Button jobVacancy;
+    private Button jobList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,18 @@ public class JobProvider_home extends AppCompatActivity {
         jobVacancy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(JobProvider_home.this, Jobprovider_addJobVacancy.class));
+                startActivity(new Intent(JobProvider_home.this, View_JobList.class));
+            }
+        });
+
+
+        jobList = findViewById(R.id.j_button1);
+
+
+        jobList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(JobProvider_home.this, JobProvider_viewJobVacancy_JS.class));
             }
         });
     }
