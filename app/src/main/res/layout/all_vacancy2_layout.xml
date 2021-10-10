@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="6dp"
+        android:layout_height="155dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/design_default_color_error" />
+
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="108dp"
+        android:layout_height="136dp"
+        android:layout_below="@+id/textView18"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-150dp"
+        app:srcCompat="@drawable/joblistimage"
+
+        />
+
+    <TextView
+        android:id="@+id/j_category1"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity=""
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="-125dp"
+        android:layout_marginRight="10dp"
+        android:text="c_ategory"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/j_position1"
+        android:layout_width="153dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="0dp"
+        android:text="p_osition"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fare1"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="-20dp"
+        android:text="Position        :"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/route1"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="15dp"
+
+        android:text="Closing Date :"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/j_closedate1"
+        android:layout_width="153dp"
+        android:layout_height="19dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginRight="0dp"
+        android:text="closedate"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton_next"
+        android:layout_width="15dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/arrow"
+        app:tint="@color/purple_500" />
+
+</LinearLayout>
