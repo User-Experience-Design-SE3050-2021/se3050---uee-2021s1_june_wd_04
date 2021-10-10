@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Job_Seeker.Add_Applicant">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="434dp"
+        android:layout_height="65dp"
+        android:background="@color/purple_500"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/addApplicantTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Add Applicant "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageButton
+        android:id="@+id/backbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/purple_500"
+        app:layout_constraintStart_toStartOf="@+id/toolbar1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <ImageButton
+        android:id="@+id/menubtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+
+    <ScrollView
+        android:layout_width="435dp"
+        android:layout_height="723dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/applicantImage"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:text="Applicant Image"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar1"
+                tools:ignore="NotSibling" />
+
+            <ImageView
+                android:id="@+id/applicantImageview"
+                android:layout_width="135dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/applicantImage"
+                app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="52dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:hint="   Name"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/applicantImageview"
+                app:layout_constraintVertical_bias="0.12">
+
+                <AutoCompleteTextView
+                    android:id="@+id/js_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:hint="   Age"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/js_name"
+                app:layout_constraintVertical_bias="0.118"
+                tools:ignore="NotSibling">
+
+                <AutoCompleteTextView
+                    android:id="@+id/js_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="290dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:hint="   Place"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/js_age"
+                app:layout_constraintVertical_bias="0.118"
+                tools:ignore="NotSibling">
+
+                <AutoCompleteTextView
+                    android:id="@+id/js_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="326dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="370dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:hint="   Email"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/js_place"
+                app:layout_constraintVertical_bias="0.118"
+                tools:ignore="NotSibling">
+
+                <AutoCompleteTextView
+                    android:id="@+id/js_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="340dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="450dp"
+                android:orientation="horizontal"
+                app:boxBackgroundMode="outline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.219"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/js_email"
+                tools:ignore="NotSibling">
+
+                <Spinner
+                    android:id="@+id/spinner_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="530dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:hint="   Position"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+                app:layout_constraintVertical_bias="0.118">
+
+                <AutoCompleteTextView
+                    android:id="@+id/js_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="610dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:hint="   Skills"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/js_position"
+                app:layout_constraintVertical_bias="0.118"
+                tools:ignore="NotSibling">
+
+                <AutoCompleteTextView
+                    android:id="@+id/js_skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="690dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:hint="   Qualifications"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/js_skills"
+                app:layout_constraintVertical_bias="0.118"
+                tools:ignore="NotSibling">
+
+                <AutoCompleteTextView
+                    android:id="@+id/js_qualifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="770dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:hint="   Experience"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/js_qualifications"
+                app:layout_constraintVertical_bias="0.118"
+                tools:ignore="NotSibling">
+
+                <AutoCompleteTextView
+                    android:id="@+id/js_experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnreset"
+                android:layout_width="119dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="850dp"
+                android:text="RESET"
+                android:textSize="16sp"
+                app:cornerRadius="20dip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/js_experience"
+                app:layout_constraintVertical_bias="0.937"
+                tools:ignore="NotSibling" />
+
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="119dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="850dp"
+                android:text="SAVE"
+                android:textSize="16sp"
+                app:cornerRadius="20dip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnreset"
+                app:layout_constraintVertical_bias="0.937" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
