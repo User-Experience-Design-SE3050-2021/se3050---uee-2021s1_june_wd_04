@@ -107,7 +107,7 @@ public class Jobprovider_addJobVacancy extends AppCompatActivity {
                                     if (task.isSuccessful()){
                                         Toast.makeText(Jobprovider_addJobVacancy.this, "Congratulations, your job vacancy is successfully added.", Toast.LENGTH_SHORT).show();
 
-                                        Intent intent = new Intent(Jobprovider_addJobVacancy.this, JobProvider_home.class);
+                                        Intent intent = new Intent(Jobprovider_addJobVacancy.this, View_JobList.class);
                                         startActivity(intent);
                                     }
                                     else {

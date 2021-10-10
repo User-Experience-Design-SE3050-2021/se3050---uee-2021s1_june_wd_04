@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TopJobApp">
-        <activity android:name=".IT_vacancies"></activity>
+        <activity android:name=".Favourte_lst_jobList"></activity>
+        <activity android:name=".IT_vacancies" />
         <activity android:name=".Business_vacancies" />
         <activity android:name=".Delete_vacancy" />
         <activity android:name=".Edit_vacancy" />
