@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.topjobapp.Job_Seeker.Job_Seeker_Home;
 import com.example.topjobapp.Model.JobSeeker;
 import com.example.topjobapp.Prevalent.Prevalent;
 
@@ -87,7 +88,7 @@ public class JobSeeker_login extends AppCompatActivity {
                         if(userData.getPassword().equals(t_password))
                         {
                             Toast.makeText(JobSeeker_login.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(JobSeeker_login.this, Job_Seeker_Profile.class);
+                            Intent intent = new Intent(JobSeeker_login.this, Job_Seeker_Home.class);
                             startActivity(intent);
 
                             Prevalent.currentOnlineUser = userData;
