@@ -82,7 +82,7 @@ public class JobProvider_login extends AppCompatActivity {
                         if(userData.getPassword().equals(t_passwords))
                         {
                             Toast.makeText(JobProvider_login.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(JobProvider_login.this, Job_Provider_Profile.class);
+                            Intent intent = new Intent(JobProvider_login.this, JobProvider_home.class);
                             startActivity(intent);
 
                             Prevalent.currentOnlineProvider = userData;
