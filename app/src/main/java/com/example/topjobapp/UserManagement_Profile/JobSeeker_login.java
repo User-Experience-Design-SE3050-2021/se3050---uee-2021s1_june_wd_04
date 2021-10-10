@@ -82,7 +82,7 @@ public class JobSeeker_login extends AppCompatActivity {
                         if(userData.getPassword().equals(t_password))
                         {
                             Toast.makeText(JobSeeker_login.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(JobSeeker_login.this, JobSeeker_login.class);
+                            Intent intent = new Intent(JobSeeker_login.this, Job_Seeker_Profile.class);
                             startActivity(intent);
 
                             Prevalent.currentOnlineUser = userData;
