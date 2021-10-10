@@ -29,40 +29,10 @@
         app:cornerRadius="12dip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.867" />
-
-    <Button
-        android:id="@+id/u_button12"
-        android:layout_width="269dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#C81616"
-        android:fontFamily="@font/poppins_bold"
-        android:text="log out"
-        android:textColor="#FFFFFF"
-        app:cornerRadius="12dip"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.947" />
-
-    <TextView
-        android:id="@+id/u_text6"
-        android:layout_width="223dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/nunito_extrabold"
-        android:text="Tinali Silva"
-        android:textAlignment="center"
-        android:textColor="#6E0909"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.839" />
 
     <TextView
         android:id="@+id/Em"
@@ -79,10 +49,25 @@
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394" />
+        app:layout_constraintVertical_bias="0.364" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/u_nav"
+        android:layout_width="409dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <TextView
-        android:id="@+id/em5"
+        android:id="@+id/u_emailt"
         android:layout_width="155dp"
         android:layout_height="37dp"
         android:layout_marginTop="68dp"
@@ -96,10 +81,10 @@
         app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394" />
+        app:layout_constraintVertical_bias="0.364" />
 
     <TextView
-        android:id="@+id/em6"
+        android:id="@+id/u_dobt"
         android:layout_width="155dp"
         android:layout_height="37dp"
         android:layout_marginTop="68dp"
@@ -113,10 +98,10 @@
         app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintVertical_bias="0.447" />
 
     <TextView
-        android:id="@+id/em7"
+        android:id="@+id/u_gendert"
         android:layout_width="121dp"
         android:layout_height="31dp"
         android:layout_marginTop="68dp"
@@ -130,7 +115,7 @@
         app:layout_constraintHorizontal_bias="0.755"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.553" />
+        app:layout_constraintVertical_bias="0.523" />
 
     <TextView
         android:id="@+id/em"
@@ -147,12 +132,12 @@
         app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.475" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <TextView
         android:id="@+id/em2"
-        android:layout_width="172dp"
-        android:layout_height="41dp"
+        android:layout_width="158dp"
+        android:layout_height="36dp"
         android:layout_marginTop="68dp"
         android:fontFamily="@font/nunito_extrabold"
         android:text="Gender            :"
@@ -164,7 +149,7 @@
         app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562" />
+        app:layout_constraintVertical_bias="0.532" />
 
     <TextView
         android:id="@+id/em3"
@@ -181,7 +166,7 @@
         app:layout_constraintHorizontal_bias="0.288"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665" />
+        app:layout_constraintVertical_bias="0.635" />
 
     <TextView
         android:id="@+id/em4"
@@ -198,42 +183,81 @@
         app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="216dp"
+        android:layout_width="31dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="240dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/em3"
-        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintHorizontal_bias="0.605"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/user" />
+        app:srcCompat="@drawable/users" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="20dp"
         android:layout_height="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toEndOf="@+id/em3"
         app:srcCompat="@drawable/arrow"
-        tools:layout_editor_absoluteX="354dp"
-        tools:layout_editor_absoluteY="482dp" />
+        tools:layout_editor_absoluteY="466dp" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="20dp"
         android:layout_height="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toEndOf="@+id/em4"
         app:srcCompat="@drawable/arrow"
-        tools:layout_editor_absoluteX="354dp"
-        tools:layout_editor_absoluteY="523dp" />
+        tools:layout_editor_absoluteY="507dp" />
 
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="40dp"
         android:layout_height="31dp"
-        app:srcCompat="@drawable/setting"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="523dp" />
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/em4"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/setting" />
+
+    <Button
+        android:id="@+id/u_button12"
+        android:layout_width="269dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C81616"
+        android:fontFamily="@font/poppins_bold"
+        android:text="log out"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="12dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
+
+    <TextView
+        android:id="@+id/u_namet"
+        android:layout_width="223dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Tinali Silva"
+        android:textAlignment="center"
+        android:textColor="#6E0909"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton4"
