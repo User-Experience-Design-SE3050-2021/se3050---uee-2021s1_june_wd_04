@@ -11,11 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TopJobApp">
 
+        <activity android:name=".Favourte_lst_jobList"></activity>
+        <activity android:name=".IT_vacancies" />
+
+
         <activity android:name=".Job_Seeker.ApplicantsRetrieve"></activity>
         <activity android:name=".Job_Seeker.Job_Seeker_Home" />
         <activity android:name=".Job_Seeker.Add_Applicant" />
 
         <activity android:name=".IT_vacancies"></activity>
+
         <activity android:name=".Business_vacancies" />
         <activity android:name=".Delete_vacancy" />
         <activity android:name=".Edit_vacancy" />
