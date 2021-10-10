@@ -7,9 +7,9 @@
     tools:context=".UserManagement_Profile.Job_Seeker_Register">
 
     <Button
-        android:id="@+id/u_button"
-        android:layout_width="365dp"
-        android:layout_height="51dp"
+        android:id="@+id/u_register"
+        android:layout_width="368dp"
+        android:layout_height="58dp"
         android:backgroundTint="#C81616"
         android:fontFamily="@font/poppins_bold"
         android:text="Register as Job Seeker"
@@ -17,112 +17,167 @@
         app:cornerRadius="12dip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintVertical_bias="0.927" />
 
-    <TextView
-        android:id="@+id/u_textView2"
-        android:layout_width="363dp"
-        android:layout_height="46dp"
-        android:background="#4BED6A5E"
-        android:text="   Username"
-        android:textAlignment="textStart"
-        android:textColor="#6E0909"
-        android:textSize="16sp"
-        android:textStyle="bold"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_usernane"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Username"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.242" />
+        app:layout_constraintTop_toBottomOf="@+id/u_text12"
+        app:layout_constraintVertical_bias="0.076">
 
-    <TextView
-        android:id="@+id/u_textView6"
-        android:layout_width="363dp"
-        android:layout_height="46dp"
-        android:background="#4BED6A5E"
-        android:text="   Password"
-        android:textAlignment="textStart"
-        android:textColor="#6E0909"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Email"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.689" />
+        app:layout_constraintTop_toBottomOf="@+id/u_usernane"
+        app:layout_constraintVertical_bias="0.046">
 
-    <TextView
-        android:id="@+id/u_textView4"
-        android:layout_width="363dp"
-        android:layout_height="46dp"
-        android:background="#4BED6A5E"
-        android:text="   Date of birth"
-        android:textAlignment="textStart"
-        android:textColor="#6E0909"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_dob"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Date of Birth"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.464" />
+        app:layout_constraintTop_toBottomOf="@+id/u_email"
+        app:layout_constraintVertical_bias="0.046">
 
-    <TextView
-        android:id="@+id/u_textView5"
-        android:layout_width="363dp"
-        android:layout_height="46dp"
-        android:background="#4BED6A5E"
-        android:text="   Gender"
-        android:textAlignment="textStart"
-        android:textColor="#6E0909"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_gender"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Gender"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintTop_toBottomOf="@+id/u_dob"
+        app:layout_constraintVertical_bias="0.046">
 
-    <TextView
-        android:id="@+id/u_textView7"
-        android:layout_width="363dp"
-        android:layout_height="46dp"
-        android:background="#4BED6A5E"
-        android:text="   Confirm Password"
-        android:textAlignment="textStart"
-        android:textColor="#6E0909"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Password"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
+        app:layout_constraintTop_toBottomOf="@+id/u_gender"
+        app:layout_constraintVertical_bias="0.066"
+        app:passwordToggleEnabled="true">
 
-    <TextView
-        android:id="@+id/u_textView3"
-        android:layout_width="363dp"
-        android:layout_height="46dp"
-        android:background="#4BED6A5E"
-        android:text="   Email"
-        android:textAlignment="textStart"
-        android:textColor="#6E0909"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/conpassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Confirm Password"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357" />
+        app:layout_constraintTop_toBottomOf="@+id/u_password"
+        app:layout_constraintVertical_bias="0.087"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/u_text12"

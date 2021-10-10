@@ -7,21 +7,6 @@
     android:textAlignment="inherit"
     tools:context=".UserManagement_Profile.JobSeeker_login">
 
-    <Button
-        android:id="@+id/u_button9"
-        android:layout_width="365dp"
-        android:layout_height="51dp"
-        android:backgroundTint="#C81616"
-        android:fontFamily="@font/poppins_bold"
-        android:text="@string/U_t"
-        android:textColor="#FFFFFF"
-        app:cornerRadius="12dip"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -32,24 +17,88 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.332"
+        app:layout_constraintVertical_bias="0.256"
         app:srcCompat="@drawable/signin" />
 
-    <TextView
-        android:id="@+id/u_textView10"
-        android:layout_width="363dp"
-        android:layout_height="46dp"
-        android:background="#4BED6A5E"
-        android:text="   Email"
-        android:textAlignment="textStart"
-        android:textColor="#6E0909"
-        android:textSize="18sp"
-        android:textStyle="bold"
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#00000000"
+        android:elevation="0dp"
+        android:text="Forget Password?"
+        android:textColor="#0E0E0E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u_upass" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_upass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Password"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u_uname"
+        app:layout_constraintVertical_bias="0.043"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/u_button9"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#C81616"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/U_t"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="12dip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.753" />
+        app:layout_constraintVertical_bias="0.949" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_uname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Username"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u_text10"
+        app:layout_constraintVertical_bias="0.076">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/u_text10"
@@ -66,21 +115,7 @@
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+        app:layout_constraintVertical_bias="0.528" />
 
-    <TextView
-        android:id="@+id/u_textView"
-        android:layout_width="363dp"
-        android:layout_height="46dp"
-        android:background="#4BED6A5E"
-        android:text="   Password"
-        android:textAlignment="textStart"
-        android:textColor="#6E0909"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

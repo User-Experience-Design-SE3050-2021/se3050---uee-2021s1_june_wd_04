@@ -110,8 +110,8 @@
 
     <TextView
         android:id="@+id/em14"
-        android:layout_width="199dp"
-        android:layout_height="45dp"
+        android:layout_width="191dp"
+        android:layout_height="38dp"
         android:layout_marginTop="68dp"
         android:fontFamily="@font/nunito_extrabold"
         android:text="Company Address :"
@@ -123,7 +123,7 @@
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542" />
+        app:layout_constraintVertical_bias="0.519" />
 
     <TextView
         android:id="@+id/em8"
@@ -143,7 +143,7 @@
         app:layout_constraintVertical_bias="0.37" />
 
     <TextView
-        android:id="@+id/em9"
+        android:id="@+id/uemailf"
         android:layout_width="180dp"
         android:layout_height="33dp"
         android:layout_marginTop="68dp"
@@ -160,7 +160,7 @@
         app:layout_constraintVertical_bias="0.371" />
 
     <TextView
-        android:id="@+id/em10"
+        android:id="@+id/ucnamef"
         android:layout_width="155dp"
         android:layout_height="37dp"
         android:layout_marginTop="68dp"
@@ -174,10 +174,10 @@
         app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <TextView
-        android:id="@+id/em11"
+        android:id="@+id/uphnf"
         android:layout_width="121dp"
         android:layout_height="31dp"
         android:layout_marginTop="68dp"
@@ -188,15 +188,15 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintHorizontal_bias="0.793"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.612" />
+        app:layout_constraintVertical_bias="0.574" />
 
     <TextView
-        android:id="@+id/em15"
-        android:layout_width="121dp"
-        android:layout_height="31dp"
+        android:id="@+id/ucaddf"
+        android:layout_width="108dp"
+        android:layout_height="32dp"
         android:layout_marginTop="68dp"
         android:fontFamily="@font/nunito_extrabold"
         android:text="Kandy"
@@ -208,7 +208,7 @@
         app:layout_constraintHorizontal_bias="0.755"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53" />
+        app:layout_constraintVertical_bias="0.515" />
 
     <TextView
         android:id="@+id/em12"
@@ -225,11 +225,11 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.445" />
 
     <TextView
         android:id="@+id/em13"
-        android:layout_width="179dp"
+        android:layout_width="165dp"
         android:layout_height="42dp"
         android:layout_marginTop="68dp"
         android:fontFamily="@font/nunito_extrabold"
@@ -239,10 +239,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+        app:layout_constraintVertical_bias="0.584" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -256,7 +256,7 @@
         app:srcCompat="@drawable/microsoft" />
 
     <TextView
-        android:id="@+id/u_text9"
+        android:id="@+id/u_unamef"
         android:layout_width="223dp"
         android:layout_height="41dp"
         android:layout_marginTop="68dp"
