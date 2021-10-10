@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.topjobapp">
 
     <application
@@ -9,6 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TopJobApp">
+
+        <activity android:name=".Job_Seeker.ApplicantsRetrieve"></activity>
+        <activity android:name=".Job_Seeker.Job_Seeker_Home" />
+        <activity android:name=".Job_Seeker.Add_Applicant" />
+
         <activity android:name=".IT_vacancies"></activity>
         <activity android:name=".Business_vacancies" />
         <activity android:name=".Delete_vacancy" />
@@ -20,6 +26,7 @@
         <activity android:name=".Activity_viewJobVacancy" />
         <activity android:name=".Jobprovider_addJobVacancy" />
         <activity android:name=".JobProvider_home" />
+
         <activity android:name=".UserManagement_Profile.Job_Provider_Profile" />
         <activity android:name=".UserManagement_Profile.Change_Password" />
         <activity android:name=".UserManagement_Profile.Edit_Job_Seeker" />

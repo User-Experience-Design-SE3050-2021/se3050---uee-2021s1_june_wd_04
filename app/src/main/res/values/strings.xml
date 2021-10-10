@@ -20,6 +20,21 @@
     <string name="u_text10">Sign In As a Job Provider</string>
     <string name="u_text11">Job Provider</string>
     <string name="u_text12">Create an Account</string>
+
+    <string name="age">Age</string>
+
+    <string-array name="categories">
+        <item>Computer and IT</item>
+        <item>Engineer</item>
+        <item>Health Care</item>
+        <item>Human Resource</item>
+        <item>Customer Service</item>
+        <item>Business Marketing</item>
+        <item>Art Fashion and Design</item>
+
+    </string-array>
+
     <string name="j_button1"><![CDATA[WORK & HIRE]]></string>
     <string name="j_button2">JOB VACANCIES</string>
+
 </resources>
