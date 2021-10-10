@@ -69,7 +69,6 @@ public class JobSeeker_login extends AppCompatActivity {
         RootRef = FirebaseDatabase.getInstance().getReference();
 
 
-
         RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot datasnapshot) {
