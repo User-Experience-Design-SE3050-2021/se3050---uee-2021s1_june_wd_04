@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/categoryname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/applicants_images"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/categoryname"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"></ImageView>
+
+        <TextView
+            android:id="@+id/applicant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_below="@+id/applicants_images"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/applicant_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_below="@+id/applicant_name"
+
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/applicant_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Position"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_below="@+id/applicant_place"
+
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/applicant_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_below="@+id/applicant_position"
+
+            android:textColor="@color/black">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

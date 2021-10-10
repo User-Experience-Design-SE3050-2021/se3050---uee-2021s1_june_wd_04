@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.topjobapp.Model.JobSeeker;
 import com.example.topjobapp.Prevalent.Prevalent;
+
 import com.example.topjobapp.R;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
@@ -20,12 +22,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+
 public class JobSeeker_login extends AppCompatActivity {
+
 
     private TextInputLayout name, pass;
     private Button login;
 
     private String parentDbName = "JobSeeker";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
