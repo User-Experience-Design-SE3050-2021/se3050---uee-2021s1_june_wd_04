@@ -28,7 +28,7 @@ public class JobSeeker_login extends AppCompatActivity {
 
 
     private TextInputLayout name, pass;
-    private Button login;
+    private Button login, forget;
 
     private String parentDbName = "JobSeeker";
 
@@ -40,6 +40,17 @@ public class JobSeeker_login extends AppCompatActivity {
 
         name = findViewById(R.id.u_uname);
         pass = findViewById(R.id.u_upass);
+
+        forget = findViewById(R.id.u_fo);
+
+        forget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JobSeeker_login.this,Seeker_Forget_Password.class);
+                startActivity(intent);
+
+            }
+        });
 
         login = findViewById(R.id.u_button9);
 

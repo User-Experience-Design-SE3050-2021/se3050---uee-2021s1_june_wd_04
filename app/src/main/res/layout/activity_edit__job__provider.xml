@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserManagement_Profile.Edit_Job_Seeker">
+    tools:context=".UserManagement_Profile.Edit_Job_Provider">
+
 
     <Button
-        android:id="@+id/u_edit"
+        android:id="@+id/u_editpr"
         android:layout_width="346dp"
         android:layout_height="55dp"
         android:backgroundTint="#C81616"
@@ -17,124 +18,13 @@
         app:cornerRadius="12dip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884" />
-
-
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/u_ename"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="358dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:hint="Username"
-        app:boxBackgroundMode="outline"
-        app:endIconMode="clear_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u_text"
-        app:layout_constraintVertical_bias="0.093">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/u_enameb"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Minulii">
-
-        </com.google.android.material.textfield.TextInputEditText>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/u_eemail"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="358dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:hint="Email"
-        app:boxBackgroundMode="outline"
-        app:endIconMode="clear_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u_ename"
-        app:layout_constraintVertical_bias="0.09">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/u_eemails"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="m@gmail.com">
-
-        </com.google.android.material.textfield.TextInputEditText>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/u_edob"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="358dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:hint="Date of Birth"
-        app:boxBackgroundMode="outline"
-        app:endIconMode="clear_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u_eemail"
-        app:layout_constraintVertical_bias="0.099">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/u_edobs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1999-02-02">
-
-        </com.google.android.material.textfield.TextInputEditText>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/u_egender"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="358dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:hint="Gender"
-        app:boxBackgroundMode="outline"
-        app:endIconMode="clear_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u_edob"
-        app:layout_constraintVertical_bias="0.137">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/u_egenders"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Female">
-
-        </com.google.android.material.textfield.TextInputEditText>
-
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintVertical_bias="0.913" />
 
     <TextView
-        android:id="@+id/u_text"
+        android:id="@+id/u_text6"
         android:layout_width="223dp"
         android:layout_height="41dp"
         android:layout_marginTop="68dp"
@@ -149,4 +39,141 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_editname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Username"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u_text6"
+        app:layout_constraintVertical_bias="0.04">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/u_enamee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timiran Yasas">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_editemail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Email"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/u_editname"
+        app:layout_constraintVertical_bias="0.059">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/eemaile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="timira@gmail.com">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_editcname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Company Name"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/u_editemail"
+        app:layout_constraintVertical_bias="0.087">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/u_cnamee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Microsoft">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_editcadd"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Company Address"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/u_editcname"
+        app:layout_constraintVertical_bias="0.111">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/u_caddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kandy">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/u_editphn"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="358dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Phone Number"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/u_editcadd"
+        app:layout_constraintVertical_bias="0.156">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/u_phnno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ 94 788808809">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

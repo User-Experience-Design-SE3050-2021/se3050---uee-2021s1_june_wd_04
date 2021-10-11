@@ -34,6 +34,21 @@
         app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
         app:tint="@color/white" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/u_navs"
+        android:layout_width="409dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
