@@ -13,6 +13,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 
+import com.example.topjobapp.Favourte_lst_jobList;
 import com.example.topjobapp.JobProvider_viewJobVacancy_JS;
 
 import com.example.topjobapp.JobProvider_home;
@@ -67,6 +68,9 @@ public class Job_Seeker_Home extends AppCompatActivity {
                         // do something here
                         return true;
                     case R.id.navigation_notification:
+
+                        Intent intent2 = new Intent(Job_Seeker_Home.this, Favourte_lst_jobList.class);
+                        startActivity(intent2);
                         // do something here
                         return true;
                     case R.id.navigation_profile:
