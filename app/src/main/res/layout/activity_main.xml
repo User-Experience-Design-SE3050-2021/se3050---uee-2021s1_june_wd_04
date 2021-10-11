@@ -7,28 +7,44 @@
     android:background="#7D0000"
     tools:context=".MainActivity" >
 
-    <ImageButton
-        android:id="@+id/u_tapbtn1"
-        android:layout_width="411dp"
-        android:layout_height="734dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/welcome" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/u_tapbtn1"-->
+<!--        android:layout_width="411dp"-->
+<!--        android:layout_height="734dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0"-->
+<!--        app:srcCompat="@drawable/welcome" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView2"-->
+<!--        android:layout_width="219dp"-->
+<!--        android:layout_height="95dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.433" />-->
+<!--    &lt;!&ndash;        app:layout_constraintBottom_toBottomOf="@+id/u_tapbtn1"&ndash;&gt;-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="@+id/u_tapbtn1"&ndash;&gt;-->
+<!--        app:layout_constraintVertical_bias="0.333"-->
+<!--        app:srcCompat="@drawable/topjob" />-->
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="219dp"
-        android:layout_height="95dp"
-        app:layout_constraintBottom_toBottomOf="@+id/u_tapbtn1"
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/u_tapbtn1"
-        app:layout_constraintVertical_bias="0.333"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429"
         app:srcCompat="@drawable/topjob" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

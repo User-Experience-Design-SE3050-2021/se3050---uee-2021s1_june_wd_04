@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.topjobapp.Job_Seeker.ApplicantsRetrieve;
 import com.example.topjobapp.UserManagement_Profile.JobProvider_login;
 
 public class JobProvider_home extends AppCompatActivity {
@@ -32,14 +33,14 @@ public class JobProvider_home extends AppCompatActivity {
         });
 
 
-        jobList = findViewById(R.id.j_button1);
-
-
-        jobList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(JobProvider_home.this, JobProvider_viewJobVacancy_JS.class));
-            }
-        });
+//        jobList = findViewById(R.id.j_button1);
+//
+//
+//        jobList.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(JobProvider_home.this, ApplicantsRetrieve.class));
+//            }
+//        });
     }
 }

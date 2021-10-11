@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.topjobapp.Job_Seeker.Job_Seeker_Home;
+
 public class JobProvider_viewJobVacancy_JS extends AppCompatActivity {
 
     private Button allvaca;
@@ -61,7 +63,7 @@ public class JobProvider_viewJobVacancy_JS extends AppCompatActivity {
         back_btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(JobProvider_viewJobVacancy_JS.this, JobProvider_home.class));
+                startActivity(new Intent(JobProvider_viewJobVacancy_JS.this, Job_Seeker_Home.class));
             }
         });
     }
