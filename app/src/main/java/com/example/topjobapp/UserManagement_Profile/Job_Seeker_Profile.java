@@ -90,7 +90,7 @@ public class Job_Seeker_Profile extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.navigation_home1:
-                        Intent intent = new Intent(Job_Seeker_Profile.this, JobProvider_home.class);
+                        Intent intent = new Intent(Job_Seeker_Profile.this, Job_Seeker_Home.class);
                         startActivity(intent);
                         // do something here
                         return true;
@@ -98,7 +98,7 @@ public class Job_Seeker_Profile extends AppCompatActivity {
                         // do something here
                         return true;
                     case R.id.navigation_profile:
-                        Intent intents = new Intent(Job_Seeker_Profile.this, Job_Provider_Profile.class);
+                        Intent intents = new Intent(Job_Seeker_Profile.this, Job_Seeker_Profile.class);
                         startActivity(intents);
 
                         // do something here
