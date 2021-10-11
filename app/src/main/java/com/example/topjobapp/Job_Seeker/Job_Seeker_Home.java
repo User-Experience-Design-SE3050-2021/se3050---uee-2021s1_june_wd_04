@@ -31,11 +31,7 @@ public class Job_Seeker_Home extends AppCompatActivity {
 
     private ImageView jobVacancy;
     private ImageView addApplicant;
-
-    private ImageButton back;
-
     private BottomNavigationView bottomnav;
-
 
 
     @Override
@@ -44,11 +40,8 @@ public class Job_Seeker_Home extends AppCompatActivity {
         setContentView(R.layout.activity_job_seeker_home);
 
         jobVacancy = findViewById(R.id.job_vacancies_image);
-
-        back = findViewById(R.id.backbtn1);
-
+        addApplicant = findViewById(R.id.add_applicant_image);
         bottomnav = findViewById(R.id.u_navr);
-
 
         jobVacancy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,13 +53,7 @@ public class Job_Seeker_Home extends AppCompatActivity {
         addApplicant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Job_Seeker_Home.this, RetrieveAllApplicants.class));
-            }
-        });
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Job_Seeker_Home.this, welcome_page.class));
+                startActivity(new Intent(Job_Seeker_Home.this, Add_Applicant.class));
             }
         });
 
