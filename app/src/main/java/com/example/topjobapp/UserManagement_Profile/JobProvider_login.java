@@ -24,7 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class JobProvider_login extends AppCompatActivity {
 
-    private Button u_button9;
+    private Button u_button9, forgot;
     private TextInputLayout name, password;
 
     private String parentDbName = "JobProvider";
@@ -38,6 +38,15 @@ public class JobProvider_login extends AppCompatActivity {
         name = findViewById(R.id.u_unames);
         password = findViewById(R.id.u_upasss);
         u_button9 = findViewById(R.id.u_button9);
+        forgot = findViewById(R.id.button45);
+
+        forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JobProvider_login.this,Seeker_Forget_Password.class);
+                startActivity(intent);
+            }
+        });
 
         u_button9.setOnClickListener(new View.OnClickListener() {
             @Override
