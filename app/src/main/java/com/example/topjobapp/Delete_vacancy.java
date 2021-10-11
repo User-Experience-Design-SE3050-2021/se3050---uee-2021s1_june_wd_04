@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.example.topjobapp.UserManagement_Profile.Job_Seeker_Profile;
 
 public class Delete_vacancy extends AppCompatActivity {
 
@@ -25,6 +28,8 @@ public class Delete_vacancy extends AppCompatActivity {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Toast.makeText(Delete_vacancy.this, "Your vacancy details are deleted", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(Delete_vacancy.this, View_JobList.class));
             }
         });
