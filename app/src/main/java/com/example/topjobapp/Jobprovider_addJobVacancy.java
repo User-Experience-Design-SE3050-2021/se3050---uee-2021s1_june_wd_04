@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -28,12 +29,30 @@ public class Jobprovider_addJobVacancy extends AppCompatActivity {
     private Button button1;
     private EditText compnayname, category, city, position, salary, email, closedate, qualification;
 
+    private ImageButton back_btn2;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jobprovider_add_job_vacancy);
+
+
+
+
+        back_btn2 = findViewById(R.id.j_back_button_addvacandetails);
+
+
+        back_btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Jobprovider_addJobVacancy.this, View_JobList.class));
+            }
+        });
+
+
+
 
         button1 = (Button) findViewById(R.id.j_save);
 
@@ -85,6 +104,8 @@ public class Jobprovider_addJobVacancy extends AppCompatActivity {
         RootRef = FirebaseDatabase.getInstance().getReference();
 
         RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
+
+
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot dataSnapshot) {
 
