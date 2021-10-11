@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,10 +19,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <ImageButton
-        android:id="@+id/j_back_button_vacanDetails"
+        android:id="@+id/u_backh"
         android:layout_width="43dp"
         android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="127dp"
+        android:layout_toStartOf="@+id/textView2"
         android:backgroundTint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,13 +39,14 @@
         app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
         app:tint="@color/white" />
 
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="9dp"
-        android:text="profile - Job Seeker"
+        android:text="Profile"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -50,52 +57,306 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.011" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="196dp"
-        android:layout_height="142dp"
-        android:layout_marginTop="84dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pic1" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-1dp">
 
-    <Button
-        android:id="@+id/u_button11"
-        android:layout_width="268dp"
-        android:layout_height="51dp"
-        android:backgroundTint="#C81616"
-        android:fontFamily="@font/poppins_bold"
-        android:text="delete Account"
-        android:textColor="#FFFFFF"
-        app:cornerRadius="12dip"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="127dp"
+            android:layout_height="127dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="133dp"
+            app:srcCompat="@drawable/pic1" />
 
-    <TextView
-        android:id="@+id/Em"
-        android:layout_width="155dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/nunito_extrabold"
-        android:text="Email                :"
-        android:textAlignment="center"
-        android:textColor="#6E0909"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="46dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/u_namet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="Tinali Silva"
+                android:textAlignment="center"
+                android:textColor="#6E0909"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/u_tt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="Email"
+                    android:textColor="#6E0909"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/u_emailt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="tinali@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BFB6B6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/u_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="Date of birth"
+                    android:textColor="#6E0909"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/u_dobt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="1999-02-02"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BFB6B6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/u_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="Gender"
+                    android:textColor="#6E0909"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/u_gendert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="Female"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BFB6B6" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="510dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="31dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="198dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/em3"
+                        app:layout_constraintHorizontal_bias="0.594"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/users" />
+
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_extrabold"
+                        android:text="Edit user details"
+                        android:textColor="#6E0909"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/u_imageButton3"
+                        android:layout_width="10dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        app:srcCompat="@drawable/arrow" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="580dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/u_imageView12"
+                        android:layout_width="31dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="198dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/em3"
+                        app:layout_constraintHorizontal_bias="0.594"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/setting" />
+
+
+
+                    <TextView
+                        android:id="@+id/em45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_extrabold"
+                        android:text="Change password"
+                        android:textColor="#6E0909"
+                        android:textSize="20sp" />
+
+
+                    <ImageButton
+                        android:id="@+id/u_imageButton9"
+                        android:layout_width="10dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        app:srcCompat="@drawable/arrow" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/u_nav"
+        android:id="@+id/u_navd"
         android:layout_width="409dp"
         android:layout_height="45dp"
         android:layout_alignParentBottom="true"
@@ -109,172 +370,176 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <TextView
-        android:id="@+id/u_emailt"
-        android:layout_width="155dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/nunito_extrabold"
-        android:text="tinali@gmail.com:"
-        android:textAlignment="center"
-        android:textColor="#6E0909"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364" />
+<!--    <TextView-->
+<!--        android:id="@+id/u_emailt"-->
+<!--        android:layout_width="155dp"-->
+<!--        android:layout_height="37dp"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:fontFamily="@font/nunito_extrabold"-->
+<!--        android:text="tinali@gmail.com:"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#6E0909"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.855"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.364" />-->
 
-    <TextView
-        android:id="@+id/u_dobt"
-        android:layout_width="155dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/nunito_extrabold"
-        android:text="1998.07.04"
-        android:textAlignment="center"
-        android:textColor="#6E0909"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.447" />
+<!--    <TextView-->
+<!--        android:id="@+id/u_dobt"-->
+<!--        android:layout_width="155dp"-->
+<!--        android:layout_height="37dp"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:fontFamily="@font/nunito_extrabold"-->
+<!--        android:text="1998.07.04"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#6E0909"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.855"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.447" />-->
 
-    <TextView
-        android:id="@+id/u_gendert"
-        android:layout_width="121dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/nunito_extrabold"
-        android:text="Female"
-        android:textAlignment="center"
-        android:textColor="#6E0909"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523" />
+<!--    <TextView-->
+<!--        android:id="@+id/u_gendert"-->
+<!--        android:layout_width="121dp"-->
+<!--        android:layout_height="31dp"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:fontFamily="@font/nunito_extrabold"-->
+<!--        android:text="Female"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#6E0909"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.755"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.523" />-->
 
-    <TextView
-        android:id="@+id/em"
-        android:layout_width="168dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/nunito_extrabold"
-        android:text="Date of birth   :"
-        android:textAlignment="center"
-        android:textColor="#6E0909"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444" />
+<!--    <TextView-->
+<!--        android:id="@+id/em"-->
+<!--        android:layout_width="168dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:fontFamily="@font/nunito_extrabold"-->
+<!--        android:text="Date of birth   :"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#6E0909"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.069"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.444" />-->
 
-    <TextView
-        android:id="@+id/em2"
-        android:layout_width="158dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/nunito_extrabold"
-        android:text="Gender            :"
-        android:textAlignment="center"
-        android:textColor="#6E0909"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.532" />
+<!--    <TextView-->
+<!--        android:id="@+id/em2"-->
+<!--        android:layout_width="158dp"-->
+<!--        android:layout_height="36dp"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:fontFamily="@font/nunito_extrabold"-->
+<!--        android:text="Gender            :"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#6E0909"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.071"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.532" />-->
 
-    <TextView
-        android:id="@+id/em3"
-        android:layout_width="172dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/nunito_extrabold"
-        android:text="Edit user details"
-        android:textAlignment="center"
-        android:textColor="#6E0909"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.635" />
+<!--    <TextView-->
+<!--        android:id="@+id/em3"-->
+<!--        android:layout_width="172dp"-->
+<!--        android:layout_height="41dp"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:fontFamily="@font/nunito_extrabold"-->
+<!--        android:text="Edit user details"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#6E0909"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.284"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.68" />-->
 
-    <TextView
-        android:id="@+id/em4"
-        android:layout_width="172dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/nunito_extrabold"
-        android:text="Change password"
-        android:textAlignment="center"
-        android:textColor="#6E0909"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.343"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView8"-->
+<!--        android:layout_width="31dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_marginBottom="188dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/em3"-->
+<!--        app:layout_constraintHorizontal_bias="0.594"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:srcCompat="@drawable/users" />-->
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="31dp"
-        android:layout_height="25dp"
-        android:layout_marginBottom="240dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/em3"
-        app:layout_constraintHorizontal_bias="0.605"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/users" />
+<!--    <TextView-->
+<!--        android:id="@+id/em4"-->
+<!--        android:layout_width="172dp"-->
+<!--        android:layout_height="41dp"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:fontFamily="@font/nunito_extrabold"-->
+<!--        android:text="Change password"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#6E0909"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.343"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.774" />-->
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="20dp"
-        android:layout_height="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
-        app:layout_constraintStart_toEndOf="@+id/em3"
-        app:srcCompat="@drawable/arrow"
-        tools:layout_editor_absoluteY="466dp" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView12"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="31dp"-->
+<!--        android:layout_marginStart="2dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/em4"-->
+<!--        app:layout_constraintHorizontal_bias="0.425"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView8"-->
+<!--        app:srcCompat="@drawable/setting" />-->
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="20dp"
-        android:layout_height="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.802"
-        app:layout_constraintStart_toEndOf="@+id/em4"
-        app:srcCompat="@drawable/arrow"
-        tools:layout_editor_absoluteY="507dp" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView10"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="28dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.821"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/em3"-->
+<!--        app:srcCompat="@drawable/arrow"-->
+<!--        tools:layout_editor_absoluteY="445dp" />-->
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="40dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/em4"
-        app:layout_constraintHorizontal_bias="0.404"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:srcCompat="@drawable/setting" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView31"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="28dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.802"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/em4"-->
+<!--        app:srcCompat="@drawable/arrow"-->
+<!--        tools:layout_editor_absoluteY="495dp" />-->
 
     <Button
-        android:id="@+id/u_button12"
-        android:layout_width="269dp"
-        android:layout_height="50dp"
+        android:id="@+id/u_logoutq"
+        android:layout_width="169dp"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="57dp"
         android:backgroundTint="#C81616"
         android:fontFamily="@font/poppins_bold"
         android:text="log out"
@@ -282,36 +547,59 @@
         app:cornerRadius="12dip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.919" />
+        app:layout_constraintVertical_bias="0.923" />
 
-    <TextView
-        android:id="@+id/u_namet"
-        android:layout_width="223dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/nunito_extrabold"
-        android:text="Tinali Silva"
-        android:textAlignment="center"
-        android:textColor="#6E0909"
-        android:textSize="24sp"
+    <Button
+        android:id="@+id/u_button11"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="57dp"
+        android:layout_toStartOf="@+id/u_logoutq"
+        android:backgroundTint="#C81616"
+        android:fontFamily="@font/poppins_bold"
+        android:text="delete Account"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="12dip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.925" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="92dp"
-        android:clickable="true"
-        app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/add" />
+    <!--    <TextView-->
+<!--        android:id="@+id/u_namet"-->
+<!--        android:layout_width="223dp"-->
+<!--        android:layout_height="41dp"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:fontFamily="@font/nunito_extrabold"-->
+<!--        android:text="Tinali Silva"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#6E0909"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.287" />-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/floatingActionButton4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="180dp"-->
+<!--        android:layout_marginEnd="92dp"-->
+<!--        android:clickable="true"-->
+<!--        app:backgroundTint="@color/white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/add" />-->
+
+</RelativeLayout>
