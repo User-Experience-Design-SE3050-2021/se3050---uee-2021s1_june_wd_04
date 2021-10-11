@@ -12,7 +12,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+
+import com.example.topjobapp.JobProvider_viewJobVacancy_JS;
+
 import com.example.topjobapp.JobProvider_home;
+
 import com.example.topjobapp.R;
 import com.example.topjobapp.UserManagement_Profile.JobSeeker_login;
 import com.example.topjobapp.UserManagement_Profile.Job_Provider_Profile;
@@ -38,7 +42,7 @@ public class Job_Seeker_Home extends AppCompatActivity {
         jobVacancy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Job_Seeker_Home.this, ApplicantsRetrieve.class));
+                startActivity(new Intent(Job_Seeker_Home.this, JobProvider_viewJobVacancy_JS.class));
             }
         });
 
