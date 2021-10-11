@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
-        android:text="Profile - Job Provider"
+        android:text="Profile"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
