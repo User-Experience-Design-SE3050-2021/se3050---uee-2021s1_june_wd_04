@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,6 +53,7 @@ public class ApplicantsRetrieve extends AppCompatActivity {
 
         FirebaseRecyclerAdapter<Applicants, ApplicantViewHolder> adapter =
                 new FirebaseRecyclerAdapter<Applicants, ApplicantViewHolder>(options) {
+                    @SuppressLint("SetTextI18n")
                     @Override
                     protected void onBindViewHolder(@NonNull @NotNull ApplicantViewHolder applicantViewHolder, int i, @NonNull @NotNull Applicants applicants) {
                         applicantViewHolder.txtcategory.setText(applicants.getCategory());
@@ -68,8 +70,7 @@ public class ApplicantsRetrieve extends AppCompatActivity {
                     @Override
                     public ApplicantViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
                         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.applicants_layout, parent, false);
-                        ApplicantViewHolder holder = new ApplicantViewHolder(view);
-                        return holder;
+                        return new ApplicantViewHolder(view);
                     }
                 };
         recyclerView.setAdapter(adapter);

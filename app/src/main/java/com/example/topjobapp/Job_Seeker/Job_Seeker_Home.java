@@ -12,11 +12,13 @@ import android.widget.ImageView;
 
 import com.example.topjobapp.R;
 import com.example.topjobapp.UserManagement_Profile.JobSeeker_login;
+import com.example.topjobapp.UserManagement_Profile.welcome_page;
 
 public class Job_Seeker_Home extends AppCompatActivity {
 
     private ImageView jobVacancy;
     private ImageView addApplicant;
+    private ImageButton back;
 
 
     @Override
@@ -26,6 +28,7 @@ public class Job_Seeker_Home extends AppCompatActivity {
 
         jobVacancy = findViewById(R.id.job_vacancies_image);
         addApplicant = findViewById(R.id.add_applicant_image);
+        back = findViewById(R.id.backbtn1);
 
         jobVacancy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +40,13 @@ public class Job_Seeker_Home extends AppCompatActivity {
         addApplicant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Job_Seeker_Home.this, Add_Applicant.class));
+                startActivity(new Intent(Job_Seeker_Home.this, RetrieveAllApplicants.class));
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Job_Seeker_Home.this, welcome_page.class));
             }
         });
     }

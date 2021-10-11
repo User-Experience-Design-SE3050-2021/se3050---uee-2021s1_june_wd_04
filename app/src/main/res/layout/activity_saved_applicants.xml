@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Job_Seeker.SavedApplicants">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="434dp"
+        android:layout_height="65dp"
+        android:background="@color/purple_500"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/backbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/purple_500"
+        app:layout_constraintStart_toStartOf="@+id/toolbar1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/addApplicantTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Favourite(2) "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+
+    <ImageButton
+        android:id="@+id/menubtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24"
+        app:tint="@color/black" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton12"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        app:tint="@color/black" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="22dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:srcCompat="@drawable/ic_baseline_image_24"
+        app:tint="@color/black" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1">
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="30dp"
+            android:text="Name : Lakma Sanjula"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="60dp"
+            android:text="Place : Piliyandala"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="90dp"
+            android:text="Category : IT"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="120dp"
+            android:text="Position : H.R.Management"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="33dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="320dp"
+            android:background="@color/purple_500"
+            app:srcCompat="@drawable/ic_baseline_save_alt_24"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="157dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/three" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_delete_forever_24"
+            app:tint="@color/purple_500" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="250dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1">
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_delete_forever_24"
+            app:tint="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="30dp"
+            android:text="Name : Nimesh Dilshan"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="60dp"
+            android:text="Place : Kandy"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="90dp"
+            android:text="Category : IT"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="120dp"
+            android:text="Position : Software Engineering"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="33dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="320dp"
+            android:background="@color/purple_500"
+            app:srcCompat="@drawable/ic_baseline_save_alt_24"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="157dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/two" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
