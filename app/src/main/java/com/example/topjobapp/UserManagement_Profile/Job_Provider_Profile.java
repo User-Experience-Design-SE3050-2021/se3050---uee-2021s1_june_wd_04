@@ -79,7 +79,7 @@ public class Job_Provider_Profile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Job_Provider_Profile.this, "Successfully Logout", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(Job_Provider_Profile.this, provider_sign_in_up.class);
+                Intent intent = new Intent(Job_Provider_Profile.this, welcome_page.class);
                 startActivity(intent);
             }
         });

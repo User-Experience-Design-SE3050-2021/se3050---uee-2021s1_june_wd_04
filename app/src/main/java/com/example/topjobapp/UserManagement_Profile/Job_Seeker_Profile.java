@@ -111,7 +111,7 @@ public class Job_Seeker_Profile extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Job_Seeker_Profile.this, SeekerSign_in_up.class);
+                Intent intent = new Intent(Job_Seeker_Profile.this, welcome_page.class);
                 startActivity(intent);
             }
         });
