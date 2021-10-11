@@ -239,5 +239,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.33" />
 
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244"
+        app:srcCompat="@drawable/ic_baseline_add_a_photo_24"
+        app:tint="@color/black" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

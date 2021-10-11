@@ -47,8 +47,9 @@
         android:backgroundTint="@color/purple_500"
         app:layout_constraintStart_toStartOf="@+id/toolbar1"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
-        app:tint="@color/white" />
+
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
 
     <ImageButton
         android:id="@+id/menubtn1"
@@ -61,13 +62,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_menu_24" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/u_navr"
+        android:layout_width="409dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
     <ImageView
         android:id="@+id/job_vacancies_image"
         android:layout_width="239dp"
         android:layout_height="162dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
         android:background="@android:color/holo_red_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar1"
         app:srcCompat="@drawable/jobsvacancy" />
@@ -90,7 +108,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="324dp"
+        android:layout_marginTop="272dp"
         android:text="Add Applicant"
         android:textColor="@color/purple_500"
         android:textSize="24sp"
@@ -102,9 +120,10 @@
         android:id="@+id/add_applicant_image"
         android:layout_width="239dp"
         android:layout_height="162dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="28dp"
         android:background="@android:color/holo_red_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/addapplicant" />

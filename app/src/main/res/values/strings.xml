@@ -34,6 +34,20 @@
 
     </string-array>
 
+
+    <string-array name="j_categories">
+        <item>Art Fashion &amp; Design </item>
+        <item>Business &amp; Marketing</item>
+        <item>Customer Services</item>
+        <item>Computer &amp; IT</item>
+        <item>Education</item>
+        <item>Engineering</item>
+        <item>Human Resources</item>
+        <item>Health &amp; Care</item>
+        <item>Other</item>
+
+    </string-array>
+
     <string name="j_button1"><![CDATA[WORK & HIRE]]></string>
     <string name="j_button2">JOB VACANCIES</string>
 
