@@ -10,10 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TopJobApp">
+
+        <activity android:name=".Job_Seeker.SavedApplicants"></activity>
+        <activity android:name=".Job_Seeker.ProvidersideAllApplicants" />
+        <activity android:name=".Job_Seeker.ApplicantInDetail" />
+        <activity android:name=".Job_Seeker.EditApplicant" />
+        <activity android:name=".Job_Seeker.RetrieveAllApplicants" />
+
         <activity android:name=".UserManagement_Profile.Reset_Password"></activity>
         <activity android:name=".UserManagement_Profile.Seeker_Forget_Password" />
         <activity android:name=".UserManagement_Profile.Provider_Password" />
         <activity android:name=".UserManagement_Profile.Edit_Job_Provider" />
+
         <activity android:name=".Favourte_lst_jobList" />
         <activity android:name=".IT_vacancies" />
         <activity android:name=".Job_Seeker.ApplicantsRetrieve" />

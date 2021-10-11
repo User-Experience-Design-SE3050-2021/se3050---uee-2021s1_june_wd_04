@@ -269,7 +269,7 @@ public class Add_Applicant extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
-                            Intent intent = new Intent(Add_Applicant.this, Add_Applicant.class);
+                            Intent intent = new Intent(Add_Applicant.this, RetrieveAllApplicants.class);
                             startActivity(intent);
 
                             loadingBar.dismiss();

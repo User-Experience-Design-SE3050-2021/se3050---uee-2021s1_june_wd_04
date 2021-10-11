@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Job_Seeker.Add_Applicant">
+    tools:context=".Job_Seeker.EditApplicant">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar1"
@@ -20,24 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-
     </androidx.appcompat.widget.Toolbar>
-
-    <TextView
-        android:id="@+id/addApplicantTopic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:text="Add Applicant "
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
 
     <ImageButton
         android:id="@+id/backbtn1"
@@ -51,6 +33,22 @@
         app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
         app:tint="@color/white" />
 
+    <TextView
+        android:id="@+id/addApplicantTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Edit Applicant "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
     <ImageButton
         android:id="@+id/menubtn1"
         android:layout_width="wrap_content"
@@ -62,10 +60,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_menu_24" />
 
-
     <ScrollView
-        android:layout_width="435dp"
-        android:layout_height="723dp"
+        android:layout_width="431dp"
+        android:layout_height="751dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar1"
@@ -96,7 +93,7 @@
                 android:layout_marginTop="40dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/applicantImage"
-                app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+                app:srcCompat="@drawable/three" />
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -109,7 +106,7 @@
                 android:layout_marginTop="130dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="16dp"
-                android:hint="   Name"
+
                 app:boxBackgroundMode="outline"
                 app:endIconMode="clear_text"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -122,7 +119,8 @@
                 <AutoCompleteTextView
                     android:id="@+id/js_name"
                     android:layout_width="match_parent"
-                    android:layout_height="46dp" />
+                    android:layout_height="46dp"
+                    android:text="   Lakma Sanjula" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -134,7 +132,6 @@
                 android:layout_marginTop="210dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="16dp"
-                android:hint="   Age"
                 app:boxBackgroundMode="outline"
                 app:endIconMode="clear_text"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -148,7 +145,8 @@
                 <AutoCompleteTextView
                     android:id="@+id/js_age"
                     android:layout_width="match_parent"
-                    android:layout_height="46dp" />
+                    android:layout_height="46dp"
+                    android:text="   23" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -160,7 +158,6 @@
                 android:layout_marginTop="290dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="16dp"
-                android:hint="   Place"
                 app:boxBackgroundMode="outline"
                 app:endIconMode="clear_text"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -174,19 +171,19 @@
                 <AutoCompleteTextView
                     android:id="@+id/js_place"
                     android:layout_width="match_parent"
-                    android:layout_height="46dp" />
+                    android:layout_height="46dp"
+                    android:text="   Piliyandala" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
 
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="326dp"
+                android:layout_width="340dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="370dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="16dp"
-                android:hint="   Email"
                 app:boxBackgroundMode="outline"
                 app:endIconMode="clear_text"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -200,8 +197,10 @@
                 <AutoCompleteTextView
                     android:id="@+id/js_email"
                     android:layout_width="match_parent"
-                    android:layout_height="46dp" />
+                    android:layout_height="46dp"
+                    android:text="   lakma@gmail.com" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <LinearLayout
                 android:id="@+id/linearLayout1"
                 android:layout_width="340dp"
@@ -216,10 +215,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/js_email"
                 tools:ignore="NotSibling">
 
-                <Spinner
-                    android:id="@+id/spinner_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="340dp"
+                    android:layout_height="52dp"
+
+
+                    android:text="   Information Technology"
+                    android:textColor="#000000"
+
+                    android:textSize="18dp" />
+
+                <!--                <Spinner-->
+                <!--                    android:id="@+id/spinner_1"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent" />-->
 
             </LinearLayout>
 
@@ -233,7 +243,7 @@
                 android:layout_marginTop="530dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="16dp"
-                android:hint="   Position"
+                android:hint="   "
                 app:boxBackgroundMode="outline"
                 app:endIconMode="clear_text"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -246,7 +256,8 @@
                 <AutoCompleteTextView
                     android:id="@+id/js_position"
                     android:layout_width="match_parent"
-                    android:layout_height="46dp" />
+                    android:layout_height="46dp"
+                    android:text="  H.R.Management" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -258,7 +269,6 @@
                 android:layout_marginTop="610dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="16dp"
-                android:hint="   Skills"
                 app:boxBackgroundMode="outline"
                 app:endIconMode="clear_text"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -272,7 +282,8 @@
                 <AutoCompleteTextView
                     android:id="@+id/js_skills"
                     android:layout_width="match_parent"
-                    android:layout_height="46dp" />
+                    android:layout_height="46dp"
+                    android:text="   Programming  Languages - C, C++,Java" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -284,7 +295,6 @@
                 android:layout_marginTop="690dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="16dp"
-                android:hint="   Qualifications"
                 app:boxBackgroundMode="outline"
                 app:endIconMode="clear_text"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -298,7 +308,8 @@
                 <AutoCompleteTextView
                     android:id="@+id/js_qualifications"
                     android:layout_width="match_parent"
-                    android:layout_height="46dp" />
+                    android:layout_height="46dp"
+                    android:text="   SLIIT -Bsc.(Hons) Information Technology specializing in Software Engineering | 2017 July- 2021 July" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -310,7 +321,6 @@
                 android:layout_marginTop="770dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="16dp"
-                android:hint="   Experience"
                 app:boxBackgroundMode="outline"
                 app:endIconMode="clear_text"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -324,7 +334,8 @@
                 <AutoCompleteTextView
                     android:id="@+id/js_experience"
                     android:layout_width="match_parent"
-                    android:layout_height="46dp" />
+                    android:layout_height="46dp"
+                    android:text="   1 Year, 2 months experience on ADSC Company" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
@@ -349,7 +360,7 @@
                 android:layout_height="58dp"
                 android:layout_marginStart="230dp"
                 android:layout_marginTop="850dp"
-                android:text="SAVE"
+                android:text="UPDATE"
                 android:textSize="16sp"
                 app:cornerRadius="20dip"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -359,11 +370,5 @@
                 app:layout_constraintVertical_bias="0.937" />
         </RelativeLayout>
     </ScrollView>
-
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
